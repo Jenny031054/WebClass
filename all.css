@@ -1,6 +1,157 @@
+*{
+    box-sizing: border-box;
+    color: #707070;
+    font-family: "Noto Serif TC", "Yeseva One";
+}
+body{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+}
+/*顏色*/
+.bg-primary{
+    background-color: #C0A4A5;
+}
+.bg-secondary{
+    background-color: #F5F0E7;
+}
+.text-primary{
+    color: #C0A4A5;
+}
+.text-secondary{
+    color: #F5F0E7;
+}
+.text-white{
+    color: white;
+}
 .color-pink{
 color:pink;
 }
-h2{
-    font-weight: 900;
+/*排版區塊*/
+.d-flex{
+    display: flex;
 }
+.container{
+    max-width: 1296px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner{
+    
+    background-image: url(./unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    display: flex;
+
+}
+.d-flex{
+    display: flex;
+}
+.w-50{
+    width: 50%;
+}
+.profile{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.profile-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.text-left{
+    text-align: left;
+}
+/*spacer*/
+.pt-0{
+    padding-top: 0;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
+.py-40{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+/*圖片*/
+.img-section{
+    height: 400px;
+}
+.img-1{
+    width: 400px;
+    object-fit: cover;
+}
+.img-1:hover{
+    transform: scale(1.2);
+    transition: all 1s ease-out;
+}
+.rounded{
+    border-radius: 30px;
+}
+/*文字*/
+.fs-50{
+    font-size: 50px;
+}
+.h1{
+    background-color: #C0A4A5;
+    color:white;
+    border: #C0A4A5 1px solid ;
+    border-radius: 0px;
+    padding:4px 16px;
+    display: inline;
+    margin-bottom: 16px;
+    font-size: 32px;
+}
+.banner-text{
+    padding: 30px 130px;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-style: italic;
+}
+.nav{
+    font-weight: 900; 
+    z-index: 3;
+    top: 0;
+    left: 0;
+    position: sticky;
+}
+.swiper {
+   width: 500px;
+  }
+.swiper-button-prev,.swiper-button-next{
+    color: white;
+    
+    border-radius: 30px;
+}
+.sticky-icon{
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top:50%;
+    right:30px;
+    width: 50px;
+    height: 100px;
+  
+  }
